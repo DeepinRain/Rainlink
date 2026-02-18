@@ -4,7 +4,7 @@
   "description": "Another lavalink wrapper but focus on stability and rich features",
   "repository": {
     "type": "git",
-    "url": "https://github.com/RainyXeon/Rainlink.git"
+    "url": "https://github.com/DeepinRain/Rainlink.git"
   },
   "scripts": {
     "build": "npx tsup-node",
