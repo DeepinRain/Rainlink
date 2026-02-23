@@ -157,6 +157,7 @@ export class RainlinkPlayer {
 					token: this.voice.serverUpdate!.token,
 					endpoint: this.voice.serverUpdate!.endpoint,
 					sessionId: this.voice.sessionId!,
+					channelId: this.voice.voiceId
 				},
 			},
 		}
