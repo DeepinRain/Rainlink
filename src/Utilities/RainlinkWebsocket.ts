@@ -376,8 +376,8 @@ export class RainlinkWebsocket extends EventEmitter {
 			const nextData = await new Promise((resolve) => {
 				this.socket?.once('data', (data) => {
 					if (data.length > bytesLeft) {
-						this.socket?.unshift(data.subarray(bytesLeft))
-						data = data.subarray(0, bytesLeft)
+						this.socket?.unshift((data as any).subarray(bytesLeft))
+						data = (data as any).subarray(0, bytesLeft)
 					}
 					resolve(data)
 				})
